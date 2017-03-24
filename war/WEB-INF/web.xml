@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>DeleteProductServlet</servlet-name>
+		<servlet-class>com.servlet.DeleteProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteProductServlet</servlet-name>
+		<url-pattern>/deleteProduct</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveProductServlet</servlet-name>
+		<servlet-class>com.servlet.SaveProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveProductServlet</servlet-name>
+		<url-pattern>/saveProduct</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ListAllProductServlet</servlet-name>
+		<servlet-class>com.servlet.ListAllProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListAllProductServlet</servlet-name>
+		<url-pattern>/listAllProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GenerateProductServlet</servlet-name>
+		<servlet-class>com.servlet.GenerateProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerateProductServlet</servlet-name>
+		<url-pattern>/genProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FindProductByKeyServlet</servlet-name>
+		<servlet-class>com.servlet.FindProductByKeyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindProductByKeyServlet</servlet-name>
+		<url-pattern>/findProductByKey</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
